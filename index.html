@@ -13,26 +13,26 @@
 <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg border-bottom">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Aryan Patel</a>
+        <div class="container">
+            <a class="navbar-brand mx-auto text-center fw-bold" href="#">Aryan Patel</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mx-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link text-dark" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About Me</a>
+                        <a class="nav-link text-dark" href="#about">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link text-dark" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact Me</a>
+                        <a class="nav-link text-dark" href="#contact">Contact Me</a>
                     </li>
             </div>
         </div>
@@ -47,10 +47,13 @@
             <div class="col-lg-6">
                 <h1 class="display-5 fw-bold lh-1 mb-3">Hello👋</h1>
                 <h1 class="display-5 fw-bold lh-1 mb-3">I am Aryan Patel</h1>
-                <h2 class="display-4 lh-1 mb-4">Computer Science Student 😎</h2>
+                <h2 class="display-4 lh-1 mb-4">Computer Science Student 💻</h2>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Contact Me</button>
-                    <button type="button" class="btn btn-outline-dark btn-lg px-4">View Resume</button>
+                    <a href="https://github.com/Aryan-R-Patel" target="_blank"
+                        class="btn btn-primary btn-lg px-4 me-md-2">GitHub</a>
+                    <a href="https://www.linkedin.com/in/aryan-patel-codes" target="_blank"
+                        class="btn btn-primary btn-lg px-4 me-md-2">LinkedIn</a>
+                    <a href="/resume.pdf" target="_blank" class="btn btn-outline-dark btn-lg px-4">View Resume</a>
                 </div>
             </div>
         </div>
@@ -63,10 +66,10 @@
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-lg-6">
                 <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">About Me</h1>
-                <p class="lead">I am a passionate second-year computer science student at the University of Toronto
-                    ScarboroughI am a passionate second-year computer science student at the University of Toronto
-                    ScarboroughI am a passionate second-year computer science student at the University of Toronto
-                    Scarborough</p>
+                <p class="lead">I am Aryan Patel, a second-year Computer Science student specializing in Software
+                    Engineering and majoring in Statistics. I am passionate about software development, machine learning
+                    and artificial intelligence. I constantly build real-world projects, and seek opportunities to grow
+                    and contribute to the community.</p>
             </div>
             <div class="col-10 col-sm-8 col-lg-6"> <img src="./assets/about.png" class="d-block mx-lg-auto img-fluid"
                     alt="Sample Image" width="700" height="500" loading="lazy">
@@ -82,11 +85,21 @@
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
             <div class="col">
                 <div class="card mb-5">
-                    <img src="..." class="card-img-top" alt="Project 1 Image" style="height: 200px; object-fit: cover;">
+                    <img src="/assets/audiofy.jpg" class="card-img-top" alt="Project 1 Image"
+                        style="height: 200px; object-fit: cover;">
                     <div class="card-body border-top">
                         <h5 class="card-title">Audiofy</h5>
-                        <p class="card-text">A Flask-based web application that converts PDF and text to MP3 audio
-                            files.</p>
+                        <div class="mb-2">
+                            <span class="badge bg-secondary">Flask</span>
+                            <span class="badge bg-secondary">SQLite</span>
+                            <span class="badge bg-secondary">Python</span>
+                            <span class="badge bg-secondary">Gemini API</span>
+                            <span class="badge bg-secondary">Bootstrap</span>
+                            <span class="badge bg-secondary">HTML5</span>
+                            <span class="badge bg-secondary">CSS3</span>
+                        </div>
+                        
+                        <p class="card-text">A full-stack web application that converts PDFs to MP3.</p>
                         <a href="https://github.com/Aryan-R-Patel/audiofy" target="_blank"
                             class="btn btn-primary">GitHub</a>
                     </div>
@@ -94,24 +107,37 @@
             </div>
             <div class="col">
                 <div class="card mb-5">
-                    <img src="..." class="card-img-top" alt="Project 1 Image" style="height: 200px; object-fit: cover;">
+                    <img src="/assets/brain-tumor.jpg" class="card-img-top" alt="Project 2 Image"
+                        style="height: 200px; object-fit: cover;">
                     <div class="card-body border-top">
-                        <h5 class="card-title">Audiofy</h5>
-                        <p class="card-text">A Flask-based web application that converts PDF and text to MP3 audio
-                            files.</p>
-                        <a href="https://github.com/Aryan-R-Patel/audiofy" target="_blank"
+                        <h5 class="card-title">Brain Tumor Detection Model</h5>
+                        <div class="mb-2">
+                            <span class="badge bg-secondary">Python</span>
+                            <span class="badge bg-secondary">Scikit Learn</span>
+                            <span class="badge bg-secondary">NumPy</span>
+                        </div>
+                        
+                        <p class="card-text">A machine learning classification model to detect brain tumors from MRI scans developed using a dataset of 5200+ labelled images.</p>
+                        <a href="https://github.com/Aryan-R-Patel/brain-tumor-detection" target="_blank"
                             class="btn btn-primary">GitHub</a>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card mb-5">
-                    <img src="..." class="card-img-top" alt="Project 1 Image" style="height: 200px; object-fit: cover;">
+                    <img src="/assets/portfolio.jpg" class="card-img-top" alt="Project 3 Image"
+                        style="height: 200px; object-fit: cover;">
                     <div class="card-body border-top">
-                        <h5 class="card-title">Audiofy</h5>
-                        <p class="card-text">A Flask-based web application that converts PDF and text to MP3 audio
-                            files.</p>
-                        <a href="https://github.com/Aryan-R-Patel/audiofy" target="_blank"
+                        <h5 class="card-title">Portfolio Website</h5>
+                        <div class="mb-2">
+                            <span class="badge bg-secondary">Bootstrap</span>
+                            <span class="badge bg-secondary">HTML5</span>
+                            <span class="badge bg-secondary">CSS3</span>
+                        </div>
+                        
+                        <p class="card-text">A simple and minimalistic portfolio website made with HTML, CSS, and
+                            Bootstrap.</p>
+                        <a href="https://github.com/Aryan-R-Patel/portfolio-website" target="_blank"
                             class="btn btn-primary">GitHub</a>
                     </div>
                 </div>
@@ -122,17 +148,22 @@
     <hr>
 
     <!-- contact -->
-    <div class="container col-xxl-8 px-4 py-5" id="about">
+    <div class="container col-xxl-8 px-4 py-5" id="contact">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div class="col-10 col-sm-8 col-lg-6"> <img src="./assets/about.png" class="d-block mx-lg-auto img-fluid"
+            <div class="col-10 col-sm-8 col-lg-6"> <img src="./assets/contact.png" class="d-block mx-lg-auto img-fluid"
                     alt="Sample Image" width="700" height="500" loading="lazy">
             </div>
             <div class="col-lg-6">
-                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">About Me</h1>
-                <p class="lead">I am a passionate second-year computer science student at the University of Toronto
-                    ScarboroughI am a passionate second-year computer science student at the University of Toronto
-                    ScarboroughI am a passionate second-year computer science student at the University of Toronto
-                    Scarborough</p>
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Contact Me</h1>
+                <p class="fs-4 fw-bold mb-3">Please feel free to reach out to me for collaboration, questions, or just
+                    to connect!</p>
+                <p class="lead"><b>GitHub</b>: <a href="https://github.com/Aryan-R-Patel"
+                        target="_blank">Aryan-R-Patel</a></p>
+                <p class="lead"><b>LinkedIn</b>: <a href="https://www.linkedin.com/in/aryan-patel-codes"
+                        target="_blank">aryan-patel-codes</a></p>
+                <p class="lead"><b>Email</b>: <a
+                        href="mailto:aryanr.patel@mail.utoronto.ca">aryanr.patel@mail.utoronto.ca</a></p>
+                <p class="lead"><b>Phone</b>: <a href="tel:+14374884801">+1-437-488-4801</a></p>
             </div>
         </div>
     </div>
@@ -140,18 +171,17 @@
     <hr>
 
     <div class="container">
-
         <footer class="d-flex flex-wrap justify-content-between align-items-center pb-3">
-            <p class="col-md-4 mb-0 text-body-secondary">© 2025 Aryan Patel</p> <a href="/"
+            <p class="col-md-4 mb-0">© 2025 Aryan Patel</p> <a href="/"
                 class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
                 aria-label="Bootstrap"> <svg class="bi me-2" width="40" height="32" aria-hidden="true">
                     <use xlink:href="#bootstrap"></use>
                 </svg> </a>
             <ul class="nav col-md-4 justify-content-end">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link px-2 text-body-secondary">About Me</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link px-2 text-body-secondary">Projects</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link px-2 text-body-secondary">Contact Me</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-dark">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link px-2 text-dark">About Me</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link px-2 text-dark">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link px-2 text-dark">Contact Me</a></li>
             </ul>
         </footer>
     </div>
